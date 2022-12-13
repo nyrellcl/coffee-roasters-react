@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nyrellcl/coffee-roasters-react/static/css/main.0eecde02.css",
-    "main.js": "/nyrellcl/coffee-roasters-react/static/js/main.4339cb54.js",
+    "main.js": "/nyrellcl/coffee-roasters-react/static/js/main.c7bfe1e1.js",
     "static/media/logo.svg": "/nyrellcl/coffee-roasters-react/static/media/logo.a2512c0fbb640a4458b2d5ab3d4b0a16.svg",
     "static/media/icon-instagram.svg": "/nyrellcl/coffee-roasters-react/static/media/icon-instagram.62df5516b7fa938d6e167f91198c3d20.svg",
     "index.html": "/nyrellcl/coffee-roasters-react/index.html",
@@ -10,10 +10,10 @@
     "static/media/icon-close.svg": "/nyrellcl/coffee-roasters-react/static/media/icon-close.4ead4ec3073b5cd566faee8992dd1add.svg",
     "static/media/icon-hamburger.svg": "/nyrellcl/coffee-roasters-react/static/media/icon-hamburger.dfd5971a8d314a186e9f7026c53ba6c7.svg",
     "main.0eecde02.css.map": "/nyrellcl/coffee-roasters-react/static/css/main.0eecde02.css.map",
-    "main.4339cb54.js.map": "/nyrellcl/coffee-roasters-react/static/js/main.4339cb54.js.map"
+    "main.c7bfe1e1.js.map": "/nyrellcl/coffee-roasters-react/static/js/main.c7bfe1e1.js.map"
   },
   "entrypoints": [
     "static/css/main.0eecde02.css",
-    "static/js/main.4339cb54.js"
+    "static/js/main.c7bfe1e1.js"
   ]
 }
