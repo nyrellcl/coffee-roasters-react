@@ -21,7 +21,7 @@ function Nav() {
             {click ? {iconHam} : {iconClose}}
         </nav>
         <ul className={click ? 'nav-list active' : 'nav-list'}>
-          <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
+          <li><Link to="/coffee-roasters-react" onClick={closeMobileMenu}>Home</Link></li>
           <li><Link to="/about" onClick={closeMobileMenu}>About</Link></li>
           <li><Link to="/plan" onClick={closeMobileMenu}>Plan</Link></li>
         </ul>

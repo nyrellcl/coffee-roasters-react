@@ -8,7 +8,7 @@ function App() {
     <>
     <Nav/>
     <Routes>
-      <Route path="/" exact element={<MainHome/>}/>
+      <Route path="/coffee-roasters-react" exact element={<MainHome/>}/>
     </Routes> 
     <Footer/>
     </>

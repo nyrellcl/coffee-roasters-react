@@ -14,7 +14,7 @@ function Footer() {
 
         <nav className='footer-nav-bar'>
             <ul className='footer-nav-bar__list'>
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/coffee-roasters-react">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/plan">Create Your Plan</Link></li>
             </ul>
