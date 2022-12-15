@@ -1,12 +1,17 @@
 import React from 'react'
+import HeroHome from './HeroHome'
+import CollectionHome from './Collection/CollectionHome'
+import ServicesHome from './Services/ServicesHome'
+import ProcessHome from './Process/ProcessHome'
 
 
 function MainHome() {
   return (
     <>
-    <div>
-        <h1>MainHome</h1>
-    </div>
+   <HeroHome/>
+   <CollectionHome/>
+   <ServicesHome/>
+   <ProcessHome/>
     </>
 
   )
