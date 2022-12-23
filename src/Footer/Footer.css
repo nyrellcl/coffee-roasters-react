@@ -1,1 +1,83 @@
+<<<<<<< HEAD
 /*# sourceMappingURL=Footer.css.map */
+=======
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&display=swap");
+ul {
+  list-style: none;
+}
+
+@media only screen and (min-width: 375px) {
+  .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: hsl(215deg, 19%, 25%);
+  }
+  .footer-container__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.375rem 0 3rem;
+  }
+  .footer-container .footer-nav-bar {
+    font-family: "Barlow", sans-serif;
+  }
+  .footer-container .footer-nav-bar__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    letter-spacing: 0.0625rem;
+    gap: 1.5rem;
+  }
+  .footer-container .footer-nav-bar__list a {
+    color: hsl(215deg, 5%, 54%);
+  }
+  .footer-container .footer-links {
+    padding: 3rem 0 3.375rem;
+  }
+  .footer-container .footer-links__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-container .footer-links__list img:not([disabled]):hover {
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    color: hsl(25deg, 94%, 86%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer-container .footer-nav-bar__list {
+    width: 45%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-container .footer-links__list {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-container .footer-nav-bar__list {
+    width: 100%;
+  }
+  .footer-container .footer-nav-bar__list a:not([disabled]):hover {
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    color: hsl(43deg, 78%, 98%);
+  }
+  .footer-container .footer-links {
+    width: 10%;
+  }
+  .footer-container .footer-links__list {
+    width: auto;
+  }
+}/*# sourceMappingURL=Footer.css.map */
+>>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239

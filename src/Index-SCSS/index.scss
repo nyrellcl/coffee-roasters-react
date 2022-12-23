@@ -1,0 +1,394 @@
+@import "../Global-Sass/colors/colors", "../Global-Sass/fonts/fonts", "../Global-Sass/mixin/mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: $bg;
+}
+
+@media only screen and (min-width: 375px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $fr, $sans;
+        font-weight: 900;
+    }
+
+    .plan-btn {
+        height: rem(56);
+        width: rem(217);
+        font-family: $fr, serif;
+        background-color: $dark-cyan;
+        color: $bg;
+        font-weight: 900;
+        text-align: center;
+        font-size: rem(18);
+        border-radius: rem(6);
+        border: none;
+        @include hover{
+            transition: all 250ms ease-in-out;
+            cursor: pointer;
+            filter: brightness(125%);
+        }
+    }
+
+    .hero-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: rem(40) 0 rem(120);
+        background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: rem(10);
+        margin-bottom: rem(180);
+
+        &__content {
+            width: 90%;
+            margin: 0 auto;
+
+            h1 {
+                color: $bg;
+                font-size: rem(40);
+                text-align: center;
+                line-height: rem(40);
+                padding-bottom: rem(24);
+            }
+
+            p {
+                font-family: $bar, $sans;
+                color: $bg;
+                opacity: 0.8;
+                line-height: rem(25);
+                letter-spacing: rem(1);
+                font-weight: 400;
+                text-align: center;
+                padding-bottom: rem(40);
+            }
+
+            .btn-container {
+                @include align-flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .collection-section {
+        width: 90%;
+        margin: 0 auto;
+        @include align-flex;
+        flex-direction: column;
+        gap: rem(48);
+        padding-bottom: rem(120);
+        position: relative;
+
+        &__title {
+            font-family: $fr, serif;
+            text-transform: lowercase;
+            width: 100%;
+            color: hsla(43, 5%, 65%, 0.8);
+            text-align: center;
+            position: absolute;
+            z-index: -1;
+            font-size: rem(40);
+            top: -4rem;
+        }
+
+        .collection-container {
+            &__content {
+                text-align: center;
+
+                &__img {
+                    width: rem(200);
+                    height: auto;
+                }
+
+                h3 {
+                    color: $dark-grey-blue;
+                    font-size: rem(24);
+                    line-height: rem(32);
+                    padding: rem(24) 0 rem(16);
+                }
+
+                p {
+                    font-family: $bar, $sans;
+                    font-weight: 400;
+                    color: $dark-grey-blue;
+                    line-height: rem(25);
+                }
+            }
+        }
+    }
+
+    .service-section {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: $dark-grey-blue;
+        padding-bottom: rem(120);
+        border-radius: rem(10);
+        &__intro {
+            @include align-flex;
+            flex-direction: column;
+            gap: rem(24);
+            width: 90%;
+            margin: 0 auto;
+            padding: rem(64) 0;
+
+            h4 {
+                font-size: rem(28);
+                color: $bg;
+            }
+
+            p {
+                font-family: $bar, $sans;
+                color: $bg;
+                opacity: 0.8;
+                line-height: rem(25);
+                font-weight: 400;
+            }
+        }
+        .service-card-container{
+            @include align-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: rem(24);
+            .services-card {
+                width: 90%;
+                margin: 0 auto;
+                background-color: $dark-cyan;
+                border-radius: rem(8);
+                &__content {
+                    h5 {
+                        color: $bg;
+                        font-size: rem(24);
+                        padding-top: rem(56);
+                        padding-bottom: rem(24);
+                    }
+    
+                    p {
+                        font-family: $bar, serif;
+                        color: $bg;
+                        opacity: 0.8;
+                        line-height: rem(25);
+                        padding-bottom: rem(51);
+                    }
+                    &__img{
+                        padding-top: rem(72);
+                    }
+                }
+            }
+        }
+    }
+
+    .process-section{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding: rem(120) 0;
+        h4{
+            font-size: rem(24);
+            color: $grey;
+        }
+        .process-container{
+            padding-top: rem(80);
+            @include align-flex; 
+            flex-direction: column;
+            align-items: center;
+            gap: rem(56);
+            &__card{
+                &__content{
+                    span{
+                        font-family: $fr, serif;
+                        color: $pale-orange;
+                        font-size: rem(72);
+                        font-weight: 900;
+                    }
+                    h6{
+                        color: $dark-grey-blue;
+                        font-size: rem(28);
+                        padding: rem(24) 0;
+                    }
+                    p{
+                        font-family: $bar, $sans;
+                        line-height: rem(25);
+                        color: $dark-cyan;
+                    }
+                }
+            }
+        }
+        .btn-container{
+            padding-top: rem(80);
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .menu-icon{
+        display: none;
+    }
+
+    .nav-list{
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        font-size: rem(12);
+        position: static;
+        justify-content: flex-end;
+        left: 0;
+        opacity: 1;
+        padding-top: 0;
+        font-family: $bar, $sans;
+        a{
+            color: $grey;
+        }
+    }
+
+    .hero-container{
+        background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+        &__content{
+            width: 60%;
+            margin: rem(104) auto auto rem(54);
+            h1,p{
+                text-align: left;
+            }
+            h1{
+                font-size: rem(48);
+
+            }
+            .btn-container{
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .collection-section{
+        &__title{
+            font-size: rem(96);
+            line-height: rem(72);
+            letter-spacing: rem(3);
+        }
+        .collection-container{
+            &__content{
+                display: flex;
+                align-items: center;
+                &__details{
+                    width: 50%;
+                    margin: 0 auto;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .service-section{
+        &__intro{
+            h4{
+                font-size: rem(48);
+            }
+        }
+        .service-card-container{
+            .services-card{
+                &__content{
+                    @include align-flex;
+                    width: 80%;
+                    margin: 0 auto;
+                    &__img{
+                        padding-top: 0;
+                    }
+                    &__details{
+                        width: 60%;
+                        margin: 0 auto;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .process-section{
+        h4{
+            text-align: left;
+        }
+        .process-container{
+            flex-direction: row;
+            &__card{
+                &__content{
+                    text-align: left;
+                }
+                p{
+                    font-size: rem(15);
+                }
+            }
+        }
+        .btn-container{
+            @include align-flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .hero-container{
+        &__content{
+            h1{
+                font-size: rem(72);
+                line-height: rem(72);
+            }
+            p{
+                width: 90%;
+            }
+        }
+    }
+    
+    .collection-section{
+        flex-direction: row;
+        &__title{
+            font-size: rem(150);
+        }
+        .collection-container{
+            &__content{
+                flex-direction: column;
+                &__details{
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .service-section{
+        height: 100vh;
+        &__intro{
+            p{
+                width: 50%;
+            }
+        }
+        .service-card-container{
+            flex-direction: row;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            .services-card{
+                height: 60%;
+                &__content{
+                    flex-direction: column;
+                    padding: rem(72) 0 rem(48);
+                    width: 100%;
+                    &__details{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

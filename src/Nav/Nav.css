@@ -11,6 +11,7 @@
   z-index: 10;
 }
 
+<<<<<<< HEAD
 .nav-list {
   display: flex;
   list-style: none;
@@ -29,18 +30,59 @@
   text-align: left;
   margin-left: auto;
   font-family: "Fraunces", serif;
+=======
+.menu-icon {
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+  background-image: linear-gradient(0deg, hsla(43deg, 78%, 98%, 0.5), hsl(43deg, 78%, 98%));
+  left: 0;
+  top: -100%;
+  height: 100vh;
+  width: 100%;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s linear;
+  text-align: center;
+  margin-left: auto;
+  font-family: "Fraunces", serif;
+  padding-top: 5.625rem;
+>>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
 }
 .nav-list li {
   padding: 0.5rem;
 }
 .nav-list a {
   letter-spacing: 0.0625rem;
+<<<<<<< HEAD
   font-weight: 700;
+=======
+  font-weight: 900;
+>>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
   color: hsl(215deg, 19%, 25%);
 }
 
 .nav-list.active {
   z-index: 3;
+<<<<<<< HEAD
   left: 0;
   opacity: 0.98;
+=======
+  top: 0;
+  opacity: 0.98;
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav-list a:not([disabled]):hover {
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    color: hsl(215deg, 19%, 25%);
+  }
+>>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
 }/*# sourceMappingURL=Nav.css.map */

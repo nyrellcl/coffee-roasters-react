@@ -12,6 +12,7 @@
 
 }
 
+<<<<<<< HEAD
 .nav-list {
     display: flex;
     list-style: none;
@@ -31,12 +32,41 @@
     text-align: left;
     margin-left: auto;
     font-family: $fr, serif;
+=======
+.menu-icon{
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    background-image: linear-gradient(0deg, hsla(43, 78%, 98%, 0.5),
+    hsla(43, 78%, 98%, 1));
+    left: 0;
+    top: -100%;
+    height: 100vh;
+    width: 100%;
+    font-size: rem(24);
+    opacity: 0;
+    transition: all 0.3s linear;
+    text-align: center;
+    margin-left: auto;
+    font-family: $fr, serif;
+    padding-top: rem(90);
+>>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
     li {
         padding: 0.5rem;
     }
     a{
         letter-spacing: rem(1);
+<<<<<<< HEAD
         font-weight: 700;
+=======
+        font-weight: 900;
+>>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
         color: $dark-grey-blue;
     }
     
@@ -44,6 +74,23 @@
 
 .nav-list.active{
     z-index: 3;
+<<<<<<< HEAD
     left: 0;
     opacity: 0.98;
+=======
+    top: 0;
+    opacity: 0.98;
+}
+
+@media only screen and (min-width: 1200px){
+    .nav-list{
+        a{
+            @include hover{
+                cursor: pointer;
+                transition: all 250ms ease-in-out;
+                color: $dark-grey-blue;
+            }
+        }
+    }
+>>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
 }

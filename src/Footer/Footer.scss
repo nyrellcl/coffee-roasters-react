@@ -1,0 +1,91 @@
+@import "../Global-Sass/colors/colors", "../Global-Sass/fonts/fonts", "../Global-Sass/mixin/mixin";
+
+ul{
+    list-style: none;
+}
+@media only screen and (min-width: 375px){
+    .footer-container{
+        width: 90%;
+        margin: 0 auto;
+        background-color: $dark-grey-blue;
+        &__logo{
+            @include align-flex;
+            justify-content: center;
+            padding: rem(54) 0 rem(48)
+        }
+        .footer-nav-bar{
+            font-family: $bar, $sans;
+            &__list{
+                @include align-flex;
+                flex-direction: column;
+                font-weight: 700;
+                letter-spacing: rem(1);
+                gap: rem(24);
+                a{
+                    color: $grey;
+
+                }
+                
+            }
+        }
+        .footer-links{
+            padding: rem(48) 0 rem(54);
+            &__list{
+                @include align-flex;
+                justify-content: space-evenly;
+                img{
+                    @include hover{
+                        cursor: pointer;
+                        transition: all 250ms ease-in-out;
+                        color: $pale-orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .footer-container{
+        .footer-nav-bar{
+            &__list{
+                width: 45%;
+                margin: 0 auto;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        .footer-links{
+            &__list{
+                width: 45%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .footer-container{
+        width: 100%;
+        @include align-flex;
+        justify-content: space-evenly;
+        .footer-nav-bar{
+            &__list{
+                width: 100%;
+                a{
+                    @include hover{
+                        cursor: pointer;
+                        transition: all 250ms ease-in-out;
+                        color: $bg;
+                    }
+                }
+            }
+        }
+        .footer-links{
+            width: 10%;
+            &__list{
+                width: auto;
+            }
+        }
+    }
+}
