@@ -1,11 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "coffee-roasters",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-=======
-  "name": "coffee-roasters-site",
   "version": "0.1.0",
   "homepage": "https://github.com/nyrellcl/coffee-roasters-react",
   "private": true,
@@ -13,16 +7,12 @@
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
->>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-=======
     "react-icons": "^4.7.1",
->>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -31,13 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-<<<<<<< HEAD
-    "eject": "react-scripts eject"
-=======
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
->>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
   },
   "eslintConfig": {
     "extends": [
@@ -56,11 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
->>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
   }
 }
