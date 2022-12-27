@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../assets/shared/desktop/logo.svg"
-import iconHam from "../assets/shared/mobile/icon-hamburger.svg"
-import iconClose from "../assets/shared/mobile/icon-close.svg"
+import { FaBars, FaTimes } from 'react-icons/fa'
 import "./Nav.css"
 
 function Nav() {
@@ -18,12 +17,12 @@ function Nav() {
         </Link>
         
         <nav className='menu-icon' onClick={handleClick}>
-            {click ? {iconHam} : {iconClose}}
+        {click ? <FaTimes /> : <FaBars />}
         </nav>
         <ul className={click ? 'nav-list active' : 'nav-list'}>
           <li><Link to="/coffee-roasters-react" onClick={closeMobileMenu}>Home</Link></li>
-          <li><Link to="/about" onClick={closeMobileMenu}>About</Link></li>
-          <li><Link to="/plan" onClick={closeMobileMenu}>Plan</Link></li>
+          <li><Link to="/about" onClick={closeMobileMenu}>About Us</Link></li>
+          <li><Link to="/plan" onClick={closeMobileMenu}>Create Your Plan</Link></li>
         </ul>
     </header>
   )

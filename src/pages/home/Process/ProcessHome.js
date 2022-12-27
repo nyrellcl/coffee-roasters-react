@@ -2,6 +2,7 @@ import React from 'react'
 import {processOne, processTwo, processThree} from "../../../Data"
 import ProcessTemplate from './ProcessTemplate'
 import {Link} from 'react-router-dom'
+import "../../../Index-SCSS/index.css"
 
 function ProcessHome() {
   return (

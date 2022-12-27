@@ -52,6 +52,25 @@
     opacity: 0.98;
 }
 
+@media only screen and (min-width: 768px){
+    .nav-list{
+        flex-direction: row;
+        width: 50%;
+        height: auto;
+        font-size: 1rem;
+        position: static;
+        justify-content: flex-end;
+        opacity: 1;
+        padding-top: 0;
+        font-family: $bar, $sans;
+        font-size: rem(12);
+        a{
+            color: $grey;
+            text-transform: uppercase;
+        }
+    }
+}
+
 @media only screen and (min-width: 1200px){
     .nav-list{
         a{
