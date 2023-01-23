@@ -13,14 +13,22 @@ function Mainplan() {
         <>
             <HeroPlan />
             <section className='process-section dark'>
+                <div className='line-decor dark'>
+                    <div className='circle-container'>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
                 <div className='process-container'>
                     <ProcessTemplate {...processOne} />
                     <ProcessTemplate {...processTwo} />
                     <ProcessTemplate {...processThree} />
                 </div>
             </section>
-            <PreferenceMain/>
-            <Summary/>
+            <PreferenceMain />
+            <Summary />
         </>
     )
 }

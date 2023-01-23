@@ -49,6 +49,7 @@ body {
             border: 2px solid #000;
             background-color: #fff;
             top: rem(-15);
+
             &:nth-child(2){
                 left: rem(350);
             }
@@ -741,7 +742,7 @@ body {
     .line-decor{
         display: block;
     }
-    
+
     .hero-container{
         &__content{
             h1{
@@ -920,6 +921,16 @@ body {
     }
 
     .process-section.dark{
+        .line-decor{
+            &.dark{
+                .circle-container{
+                    span{
+                        background-color: transparent;
+                        border-color: $dark-cyan;
+                    }
+                }
+            }
+        }
         .process-container{
             padding: rem(100) rem(50);
             &__card{

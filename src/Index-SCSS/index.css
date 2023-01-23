@@ -784,6 +784,10 @@ h6 {
   .order-summary-section__card__button {
     justify-content: flex-end;
   }
+  .process-section.dark .line-decor.dark .circle-container span {
+    background-color: transparent;
+    border-color: hsl(179deg, 81%, 29%);
+  }
   .process-section.dark .process-container {
     padding: 6.25rem 3.125rem;
   }

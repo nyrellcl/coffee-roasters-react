@@ -4,9 +4,9 @@ import ProcessTemplate from './ProcessTemplate'
 import {Link} from 'react-router-dom'
 import "../../../Index-SCSS/index.css"
 
-function ProcessHome(processBg, lineDecor) {
+function ProcessHome(lineDecor) {
   return (
-    <section className={processBg ? 'process-section': 'process-section dark'}>
+    <section className='process-section'>
         <h4>How it works</h4>
         <div className={lineDecor ? 'line-decor' : 'line-decor dark'}>
           <div className='circle-container'>
