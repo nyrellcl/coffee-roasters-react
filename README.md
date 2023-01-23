@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -194,4 +194,3 @@ We love receiving feedback! We're always looking to improve our challenges and o
 
 **Have fun building!** 🚀
 
->>>>>>> 67dd6e8d73de20e49bb67335f42055dd9a7e0239
