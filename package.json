@@ -1,7 +1,7 @@
 {
   "name": "coffee-roasters",
   "version": "0.1.0",
-  "homepage": "https://github.com/nyrellcl/coffee-roasters-react",
+  "homepage": "https://github.com/nyrellcl/coffee-roasters-react/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
