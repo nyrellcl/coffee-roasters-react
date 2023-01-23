@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +20,15 @@ h5,
 h6 {
     font-family: "Fraunces", sans-serif;
     font-weight: 900;
+  }
+  p {
+    line-height: 1.5625rem;
+    font-family: "Barlow", sans-serif;
+  }
+  .line-decor {
+    width: 29.1875rem;
+    background-color: hsl(25deg, 94%, 86%);
+    height: 0.125rem;
   }
   .plan-btn {
     height: 3.5rem;
@@ -60,10 +70,8 @@ h6 {
     padding-bottom: 1.5rem;
   }
   .hero-container__content p {
-    font-family: "Barlow", sans-serif;
     color: hsl(43deg, 78%, 98%);
     opacity: 0.8;
-    line-height: 1.5625rem;
     letter-spacing: 0.0625rem;
     font-weight: 400;
     text-align: center;
@@ -73,6 +81,168 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .about-hero {
+    background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.625rem;
+    margin-bottom: 7.5rem;
+  }
+  .about-hero__details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding-top: 6.9375rem;
+    padding-bottom: 5.4375rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-hero__details h1 {
+    color: hsl(43deg, 78%, 98%);
+    font-size: 1.75rem;
+  }
+  .about-hero__details p {
+    color: hsl(43deg, 78%, 98%);
+    opacity: 0.8;
+  }
+  .hero-plan {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.625rem;
+    margin-bottom: 7.5rem;
+  }
+  .hero-plan__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.375rem;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 6.3125rem;
+    padding-bottom: 8.5rem;
+  }
+  .hero-plan__content h1, .hero-plan__content p {
+    color: hsl(43deg, 78%, 98%);
+  }
+  .hero-plan__content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-plan__content p {
+    opacity: 0.8;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .commitment-section {
+    width: 90%;
+    margin: 0 auto 7.5rem;
+  }
+  .commitment-section .commitment-image {
+    width: 100%;
+    border-radius: 0.625rem;
+  }
+  .commitment-section__content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.875rem;
+    margin-top: 3rem;
+  }
+  .commitment-section__content h2 {
+    font-size: 1.75rem;
+  }
+  .commitment-section__content p {
+    color: hsl(215deg, 19%, 25%);
+    opacity: 0.8;
+  }
+  .process-section.dark {
+    background-color: hsl(215deg, 19%, 25%);
+    width: 100%;
+    border-radius: 0.625rem;
+    margin-bottom: 7.5rem;
+  }
+  .process-section.dark .process-container {
+    padding-top: 0;
+  }
+  .process-section.dark .process-container__card__content h6, .process-section.dark .process-container__card__content p {
+    color: hsl(43deg, 78%, 98%);
+  }
+  .process-section.dark .process-container__card__content p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .quality-section {
+    width: 90%;
+    margin: 0 auto;
+    background-color: hsl(215deg, 19%, 25%);
+    border-radius: 0.625rem;
+    margin-bottom: 7.5rem;
+  }
+  .quality-section .quality-img {
+    width: 100%;
+    border-radius: 0.625rem;
+  }
+  .quality-section__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding-bottom: 3.8125rem;
+    padding-top: 4rem;
+  }
+  .quality-section__content h3, .quality-section__content p {
+    color: hsl(43deg, 78%, 98%);
+  }
+  .quality-section__content h3 {
+    font-size: 1.75rem;
+  }
+  .quality-section__content p {
+    opacity: 0.8;
+    width: 90%;
+  }
+  .headquarters-section {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 7.5rem;
+  }
+  .headquarters-section h4 {
+    font-size: 1.5rem;
+    color: hsl(215deg, 5%, 54%);
+    text-align: center;
+    margin-bottom: 4.5rem;
+  }
+  .headquarters-section__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.375rem;
+    margin-bottom: 5rem;
+  }
+  .headquarters-section__content h5 {
+    font-size: 1.75rem;
+    color: hsl(215deg, 19%, 25%);
+  }
+  .headquarters-section__content__details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .headquarters-section__content__details span {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.625rem;
+    font-weight: 400;
   }
   .collection-section {
     width: 90%;
@@ -109,10 +279,8 @@ h6 {
     padding: 1.5rem 0 1rem;
   }
   .collection-section .collection-container__content p {
-    font-family: "Barlow", sans-serif;
     font-weight: 400;
     color: hsl(215deg, 19%, 25%);
-    line-height: 1.5625rem;
   }
   .service-section {
     width: 90%;
@@ -136,10 +304,8 @@ h6 {
     color: hsl(43deg, 78%, 98%);
   }
   .service-section__intro p {
-    font-family: "Barlow", sans-serif;
     color: hsl(43deg, 78%, 98%);
     opacity: 0.8;
-    line-height: 1.5625rem;
     font-weight: 400;
   }
   .service-section .service-card-container {
@@ -162,10 +328,8 @@ h6 {
     padding-bottom: 1.5rem;
   }
   .service-section .service-card-container .services-card__content p {
-    font-family: "Barlow", serif;
     color: hsl(43deg, 78%, 98%);
     opacity: 0.8;
-    line-height: 1.5625rem;
     padding-bottom: 3.1875rem;
   }
   .service-section .service-card-container .services-card__content__img {
@@ -201,14 +365,81 @@ h6 {
     padding: 1.5rem 0;
   }
   .process-section .process-container__card__content p {
-    font-family: "Barlow", sans-serif;
-    line-height: 1.5625rem;
     color: hsl(179deg, 81%, 29%);
   }
   .process-section .btn-container {
     padding-top: 5rem;
   }
 }
+.preference-section {
+  width: 90%;
+  margin: 0 auto;
+}
+.preference-section__content {
+  padding-bottom: 6rem;
+}
+.preference-section__content__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.preference-section__content__container__card {
+  background-color: hsl(43deg, 30%, 94%);
+  border-radius: 0.5rem;
+}
+.preference-section__content__container__card h4 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0 0.5rem 1.5625rem;
+}
+.preference-section__content__container__card p {
+  padding: 0 1.5625rem 1.5rem;
+}
+.preference-section__content__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.preference-section__content__heading h3 {
+  font-size: 1.5rem;
+  color: hsl(179deg, 81%, 29%);
+}
+
+.preference-section__container__steps {
+  display: none;
+}
+
+.order-summary-section {
+  width: 90%;
+  margin: 0 auto 7.5rem;
+}
+.order-summary-section p {
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: hsl(43deg, 78%, 98%);
+  padding-bottom: 0.5rem;
+}
+.order-summary-section__card {
+  background-color: hsl(215deg, 19%, 25%);
+  border-radius: 0.625rem;
+  padding: 2rem 1.5625rem;
+}
+.order-summary-section__card q {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: hsl(43deg, 78%, 98%);
+}
+.order-summary-section__card q span {
+  color: hsl(179deg, 81%, 29%);
+}
+.order-summary-section__card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3.5rem;
+}
+
 @media only screen and (min-width: 768px) {
   .menu-icon {
     display: none;
@@ -244,6 +475,49 @@ h6 {
   .hero-container__content .btn-container {
     width: 100%;
     justify-content: flex-start;
+  }
+  .about-hero {
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+  }
+  .about-hero__details {
+    width: 60%;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 3.625rem;
+  }
+  .about-hero__details h1 {
+    font-size: 2rem;
+  }
+  .commitment-section {
+    display: flex;
+    align-items: center;
+    gap: 4.3125rem;
+  }
+  .commitment-section .commitment-image {
+    width: 50%;
+  }
+  .commitment-section__content {
+    text-align: left;
+  }
+  .commitment-section__content h2 {
+    font-size: 2rem;
+  }
+  .quality-section__content h3 {
+    font-size: 2rem;
+  }
+  .headquarters-section h4 {
+    text-align: left;
+  }
+  .headquarters-section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headquarters-section__content {
+    align-items: flex-start;
+  }
+  .headquarters-section__content__details {
+    align-items: flex-start;
   }
   .collection-section__title {
     font-size: 6rem;
@@ -293,6 +567,55 @@ h6 {
     align-items: center;
     justify-content: flex-start;
   }
+  .hero-plan {
+    background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg");
+  }
+  .hero-plan__content {
+    width: 60%;
+    text-align: left;
+    margin-left: 3.625rem;
+  }
+  .hero-plan__content h1 {
+    font-size: 3rem;
+    width: 90%;
+  }
+  .process-section {
+    min-height: 40rem;
+  }
+  .process-section .process-container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.625rem;
+    max-height: 29.375rem;
+  }
+  .process-section .process-container__card {
+    min-height: 23.1875rem;
+  }
+  .process-section .process-container__card__content p {
+    width: 100%;
+  }
+  .process-section .process-container__card__content h6 {
+    width: 90%;
+  }
+  .process-section.dark .process-container__card__content p {
+    margin: 0;
+  }
+  .preference-section__content__heading h3 {
+    font-size: 2rem;
+  }
+  .preference-section__content__container {
+    flex-direction: row;
+    height: 15.625rem;
+  }
+  .preference-section__content__container__card {
+    height: 100%;
+  }
+  .preference-section__content__container__card p {
+    padding-top: 1.5rem;
+  }
+  .order-summary-section__card {
+    min-height: 13rem;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .hero-container__content h1 {
@@ -337,5 +660,119 @@ h6 {
   }
   .service-section .service-card-container .services-card__content__details {
     text-align: center;
+  }
+  .about-hero {
+    background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
+  }
+  .about-hero__details {
+    width: 35%;
+  }
+  .about-hero__details h1 {
+    font-size: 2.5rem;
+  }
+  .commitment-section {
+    width: 80%;
+  }
+  .commitment-section__content h2 {
+    font-size: 2.5rem;
+  }
+  .commitment-section .commitment-image {
+    height: 32.5rem;
+  }
+  .quality-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 7.8125rem;
+  }
+  .quality-section__content {
+    padding-left: 5.3125rem;
+  }
+  .quality-section__content h3 {
+    font-size: 2.5rem;
+  }
+  .quality-section__content p {
+    text-align: left;
+  }
+  .headquarters-section__content h5 {
+    font-size: 2rem;
+  }
+  .hero-plan {
+    background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg");
+  }
+  .hero-plan__content {
+    width: 41%;
+  }
+  .hero-plan__content h1 {
+    font-size: 4.5rem;
+    width: 100%;
+  }
+  .hero-plan__content p {
+    width: 100%;
+  }
+  .preference-section {
+    position: relative;
+  }
+  .preference-section__content__container {
+    width: 45rem;
+    margin-left: auto;
+  }
+  .preference-section__content__container__card {
+    transition: all 250ms ease-in-out;
+  }
+  .preference-section__content__container__card:not([disabled]):hover {
+    cursor: pointer;
+    background-color: hsl(25deg, 94%, 86%);
+  }
+  .preference-section__content__heading {
+    width: 45rem;
+    margin-left: auto;
+  }
+  .preference-section__content__heading h3 {
+    font-size: 2.5rem;
+  }
+  .preference-section__container__steps {
+    display: block;
+    position: absolute;
+    width: 14.0625rem;
+  }
+  .preference-section__container__steps__menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .preference-section__container__steps__menu__list a {
+    display: flex;
+    color: hsl(215deg, 19%, 25%);
+    opacity: 0.4;
+    transition: all 250ms ease-in-out;
+  }
+  .preference-section__container__steps__menu__list a:not([disabled]):hover {
+    opacity: 1;
+  }
+  .preference-section__container__steps__menu__list a span {
+    padding-right: 1.78125rem;
+  }
+  .order-summary-section__card__button {
+    justify-content: flex-end;
+  }
+  .process-section.dark .process-container {
+    padding: 6.25rem 3.125rem;
+  }
+  .process-section.dark .process-container__card__content p {
+    margin: 0;
+  }
+  .process-section .process-container {
+    min-height: 35.3125rem;
+  }
+  .process-section .process-container__card {
+    min-height: 22.1875rem;
+  }
+  .order-summary-section {
+    width: 45rem;
+    margin: 0 4.5rem 7.5rem auto;
   }
 }/*# sourceMappingURL=index.css.map */

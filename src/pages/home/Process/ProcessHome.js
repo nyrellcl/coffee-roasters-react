@@ -4,9 +4,9 @@ import ProcessTemplate from './ProcessTemplate'
 import {Link} from 'react-router-dom'
 import "../../../Index-SCSS/index.css"
 
-function ProcessHome() {
+function ProcessHome(processBg) {
   return (
-    <section className='process-section'>
+    <section className={processBg ? 'process-section': 'process-section dark'}>
         <h4>How it works</h4>
          <div className='process-container'>
             <ProcessTemplate {...processOne}/>

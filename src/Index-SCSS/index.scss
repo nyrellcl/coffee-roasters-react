@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,17 @@ body {
     h6 {
         font-family: $fr, $sans;
         font-weight: 900;
+    }
+
+    p{
+        line-height: rem(25);
+        font-family: $bar, $sans;
+    }
+
+    .line-decor{
+        width: rem(467);
+        background-color: $pale-orange;
+        height: rem(2);
     }
 
     .plan-btn {
@@ -65,10 +77,8 @@ body {
             }
 
             p {
-                font-family: $bar, $sans;
                 color: $bg;
                 opacity: 0.8;
-                line-height: rem(25);
                 letter-spacing: rem(1);
                 font-weight: 400;
                 text-align: center;
@@ -78,6 +88,178 @@ body {
             .btn-container {
                 @include align-flex;
                 justify-content: center;
+            }
+        }
+    }
+
+    .about-hero{
+        background-image: url('../assets/about/mobile/image-hero-whitecup.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: rem(10);
+        margin-bottom: rem(120);
+        &__details{
+            @include align-flex;
+            flex-direction: column;
+            text-align: center;
+            gap: rem(24);
+            padding-top: rem(111);
+            padding-bottom: rem(87);
+            width: 90%;
+            margin: 0 auto;
+            h1{
+                color: $bg;
+                font-size: rem(28);
+            }
+            p{
+                color: $bg;
+                opacity: 0.8;
+                
+            }
+        }
+    }
+
+    .hero-plan{
+        width: 90%;
+        margin: 0 auto;
+        background-image: url('../assets/plan/mobile/image-hero-blackcup.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: rem(10);
+        margin-bottom: rem(120);
+        &__content{
+            @include align-flex;
+            flex-direction: column;
+            text-align: center;
+            gap: rem(22);
+            width: 90%;
+            margin: 0 auto;
+            padding-top: rem(101);
+            padding-bottom: rem(136);
+            h1, p{
+                color: $bg;
+            }
+            h1{
+                font-size: rem(40);
+                
+            }
+            p{
+                opacity: 0.8;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .commitment-section{
+        width: 90%;
+        margin: 0 auto rem(120);
+
+        .commitment-image{
+            width: 100%;
+            border-radius: rem(10);
+        }
+        &__content{
+            text-align: center;
+            @include align-flex;
+            flex-direction: column;
+            gap: rem(30);
+            margin-top: rem(48);
+            h2{
+                font-size: rem(28);
+            }
+            p{
+                color: $dark-grey-blue;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .process-section.dark{
+        background-color: $dark-grey-blue;
+        width: 100%;
+        border-radius: rem(10);
+        margin-bottom: rem(120);
+        .process-container{
+            padding-top: 0;
+            &__card{
+                &__content{
+                    h6,p{
+                        color: $bg;
+                    }
+                    p{
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .quality-section{
+        width: 90%;
+        margin: 0 auto;
+        background-color: $dark-grey-blue;
+        border-radius: rem(10);
+        margin-bottom: rem(120);
+        .quality-img{
+            width: 100%;
+            border-radius: rem(10);
+        }
+        &__content{
+            @include align-flex;
+            flex-direction: column;
+            text-align: center;
+            gap: rem(24);
+            padding-bottom: rem(61);
+            padding-top: rem(64);
+            h3,p{
+                color: $bg;
+
+            }
+            h3{
+                font-size: rem(28);
+            }
+            p{
+                opacity: 0.8;
+                width: 90%;
+            }
+
+        }
+    }
+    
+    .headquarters-section{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: rem(120);
+        h4{
+            font-size: rem(24);
+            color: $grey;
+            text-align: center;
+            margin-bottom: rem(72);
+        }
+        &__content{
+            @include align-flex;
+            flex-direction: column;
+            gap: rem(22);
+            margin-bottom: rem(80);
+            h5{
+                font-size: rem(28);
+                color: $dark-grey-blue;
+            }
+            &__details{
+                @include align-flex;
+                flex-direction: column;
+                span{
+                    font-family: $bar, $sans;
+                    line-height: rem(26);
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -120,10 +302,8 @@ body {
                 }
 
                 p {
-                    font-family: $bar, $sans;
                     font-weight: 400;
                     color: $dark-grey-blue;
-                    line-height: rem(25);
                 }
             }
         }
@@ -150,10 +330,10 @@ body {
             }
 
             p {
-                font-family: $bar, $sans;
+                
                 color: $bg;
                 opacity: 0.8;
-                line-height: rem(25);
+                
                 font-weight: 400;
             }
         }
@@ -176,10 +356,10 @@ body {
                     }
     
                     p {
-                        font-family: $bar, serif;
+                        
                         color: $bg;
                         opacity: 0.8;
-                        line-height: rem(25);
+                        
                         padding-bottom: rem(51);
                     }
                     &__img{
@@ -219,8 +399,7 @@ body {
                         padding: rem(24) 0;
                     }
                     p{
-                        font-family: $bar, $sans;
-                        line-height: rem(25);
+                       
                         color: $dark-cyan;
                     }
                 }
@@ -228,6 +407,77 @@ body {
         }
         .btn-container{
             padding-top: rem(80);
+        }
+    }
+}
+
+.preference-section{
+    width: 90%;
+    margin: 0 auto;
+    &__content{
+        padding-bottom: rem(96);
+        &__container{
+            @include align-flex;
+            flex-direction: column;
+            gap: rem(16);
+            &__card{
+                background-color: $light-grey;
+                border-radius: rem(8);
+                h4{
+                    font-size: rem(24);
+                    padding: rem(24) 0 rem(8) rem(25);
+                }
+                p{
+                    padding: 0 rem(25) rem(24);
+                }
+            }
+        }
+        &__heading{
+            @include align-flex;
+            justify-content: space-between;
+            padding-bottom: rem(32);
+            h3{
+                font-size: rem(24);
+                color: $dark-cyan;
+            }
+        }
+    }
+}
+
+.preference-section{
+    &__container{
+        &__steps{
+            display: none;
+        }
+    }
+}
+
+.order-summary-section{
+    width: 90%;
+    margin: 0 auto rem(120);
+
+    p{
+        text-transform: uppercase;
+        opacity: 0.5;
+        color: $bg;
+        padding-bottom: rem(8);
+    }
+    &__card{
+        background-color: $dark-grey-blue;
+        border-radius: rem(10);
+        padding: rem(32) rem(25);
+        q{
+            line-height: rem(40);
+            font-size: rem(24);
+            color: $bg;
+            span{
+                color: $dark-cyan;
+            }
+        }
+        &__button{
+            @include align-flex;
+            justify-content: center;
+            padding-top: rem(56);
         }
     }
 }
@@ -270,6 +520,58 @@ body {
                 justify-content: flex-start;
             }
         }
+    }
+
+    .about-hero{
+        background-image: url('../assets/about/tablet/image-hero-whitecup.jpg');
+        &__details{
+            width: 60%;
+            text-align: left;
+            align-items: flex-start;
+            margin-left: rem(58);
+            h1{
+                font-size: rem(32);
+            }
+        }
+    }
+
+    .commitment-section{
+        @include align-flex;
+        gap: rem(69);
+        .commitment-image{
+            width: 50%;
+        }
+        &__content{
+            text-align: left;
+            h2{
+                font-size: rem(32);
+            }
+        }
+    }
+
+    .quality-section{
+        &__content{
+            h3{
+                font-size: rem(32);
+            }
+        }
+    }
+
+    .headquarters-section{
+        h4{
+            text-align: left;
+        }
+        &__container{
+            @include align-flex;
+            justify-content: space-between;
+        }
+        &__content{
+            align-items: flex-start;
+            &__details{
+                align-items: flex-start;
+            }
+        }
+
     }
 
     .collection-section{
@@ -336,7 +638,81 @@ body {
             justify-content: flex-start;
         }
     }
+
+.hero-plan{
+    background-image: url('../assets/plan/tablet/image-hero-blackcup.jpg');
+    &__content{
+        width: 60%;
+        text-align: left;
+        margin-left: rem(58);
+        h1{
+            font-size: rem(48);
+            width: 90%;
+        }
+    }
 }
+
+.process-section{
+        min-height: rem(640);
+        .process-container{
+            width: 90%;
+            margin: 0 auto;
+            gap: rem(10);
+            max-height: rem(470);
+            &__card{
+                min-height: rem(371);
+                &__content{
+                    p{
+                        width: 100%;
+                    }
+                    h6{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .process-section.dark{
+        .process-container{
+            &__card{
+                &__content{
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+.preference-section{
+    &__content{
+        &__heading{
+            h3{
+                font-size: rem(32);
+            }
+        }
+        &__container{
+            flex-direction: row;
+            height: rem(250);
+            &__card{
+                height: 100%;
+                p{
+                    padding-top: rem(24);
+                }
+            }
+    
+        }
+    }
+}
+
+.order-summary-section{
+    &__card{
+        min-height: rem(208);
+    }
+}
+}
+
 
 @media only screen and (min-width: 1200px){
     .hero-container{
@@ -390,5 +766,157 @@ body {
                 }
             }
         }
+    }
+
+    .about-hero{
+        background-image: url('../assets/about/desktop/image-hero-whitecup.jpg');
+        &__details{
+            width: 35%;
+            h1{
+                font-size: rem(40);
+            }
+        }
+    }
+    
+    .commitment-section{
+        width: 80%;
+        &__content{
+            h2{
+                font-size: rem(40);
+            }
+        }
+        .commitment-image{
+            height: rem(520);
+        }
+    }
+
+    .quality-section{
+        @include align-flex;
+        flex-direction: row-reverse;
+        gap: rem(125);
+        &__content{
+            padding-left: rem(85);
+            h3{
+                font-size: rem(40);
+            }
+            p{
+                text-align: left;
+            }
+        }
+    }
+
+    .headquarters-section{
+        &__content{
+            h5{
+                font-size: rem(32);
+            }
+        }
+    }
+
+    .hero-plan{
+        background-image: url('../assets/plan/desktop/image-hero-blackcup.jpg');
+        &__content{
+            width: 41%;
+            h1{
+                font-size: rem(72);
+                width: 100%;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+
+    .preference-section{
+        position: relative;
+        &__content{
+            &__container{
+                width: rem(720);
+                margin-left: auto;
+                &__card{
+                    transition: all 250ms ease-in-out;
+                    @include hover{
+                        cursor: pointer;
+                        background-color: $pale-orange
+                    }
+                }
+                
+            }
+            &__heading{
+                width: rem(720);
+                margin-left: auto;
+                h3{
+                    font-size: rem(40);
+                }
+            }
+        }
+    }
+
+    .preference-section{
+        &__container{
+            &__steps{
+                display: block;
+                position: absolute;
+                width: rem(225);
+                &__menu{
+                    &__list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: rem(24);
+                        font-family: $fr, serif;
+                        font-size: rem(24);
+                        font-weight: 900;
+                        a{
+                            display: flex;
+                            color: $dark-grey-blue;
+                            opacity: 0.4;
+                            transition: all 250ms ease-in-out;
+                            @include hover{
+                                opacity: 1;
+                            }
+                            span{
+                                padding-right: rem(28.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .order-summary-section{
+        &__card{
+            &__button{
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .process-section.dark{
+        .process-container{
+            padding: rem(100) rem(50);
+            &__card{
+                &__content{
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .process-section{
+        .process-container{
+            min-height: rem(565);
+            &__card{
+                min-height: rem(355);
+            }
+        }
+    }
+
+    .order-summary-section{
+        width: rem(720);
+        margin: 0 4.5rem rem(120) auto;
+
     }
 }
