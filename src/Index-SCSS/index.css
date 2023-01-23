@@ -26,9 +26,31 @@ h6 {
     font-family: "Barlow", sans-serif;
   }
   .line-decor {
-    width: 29.1875rem;
+    width: 47.5rem;
     background-color: hsl(25deg, 94%, 86%);
     height: 0.125rem;
+    margin-top: 5.9375rem;
+    margin-left: 3.375rem;
+    display: none;
+  }
+  .circle-container {
+    position: relative;
+  }
+  .circle-container span {
+    position: absolute;
+    display: block;
+    width: 1.9375rem;
+    height: 1.9375rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #fff;
+    top: -0.9375rem;
+  }
+  .circle-container span:nth-child(2) {
+    left: 21.875rem;
+  }
+  .circle-container span:nth-child(3) {
+    left: 47.5rem;
   }
   .plan-btn {
     height: 3.5rem;
@@ -618,6 +640,9 @@ h6 {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .line-decor {
+    display: block;
+  }
   .hero-container__content h1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
@@ -764,6 +789,9 @@ h6 {
   }
   .process-section.dark .process-container__card__content p {
     margin: 0;
+  }
+  .process-section h4 {
+    margin-left: 3.375rem;
   }
   .process-section .process-container {
     min-height: 35.3125rem;
