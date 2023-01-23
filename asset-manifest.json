@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nyrellcl/coffee-roasters-react/static/css/main.7302d588.css",
-    "main.js": "/nyrellcl/coffee-roasters-react/static/js/main.709f84df.js",
+    "main.js": "/nyrellcl/coffee-roasters-react/static/js/main.1f1fc220.js",
     "static/media/image-hero-whitecup.jpg": "/nyrellcl/coffee-roasters-react/static/media/image-hero-whitecup.531ce5f31b60be0d761f.jpg",
     "static/media/image-hero-coffeepress.jpg": "/nyrellcl/coffee-roasters-react/static/media/image-hero-coffeepress.73479cf61bb756da988d.jpg",
     "static/media/image-hero-blackcup.jpg": "/nyrellcl/coffee-roasters-react/static/media/image-hero-blackcup.176b6072d3b058612a4e.jpg",
@@ -24,10 +24,10 @@
     "static/media/icon-twitter.svg": "/nyrellcl/coffee-roasters-react/static/media/icon-twitter.1bbd69f278f1cd7ec3af52b555f62f7c.svg",
     "static/media/icon-facebook.svg": "/nyrellcl/coffee-roasters-react/static/media/icon-facebook.81fb4fc16f486a2100967f6ad9d6ee01.svg",
     "main.7302d588.css.map": "/nyrellcl/coffee-roasters-react/static/css/main.7302d588.css.map",
-    "main.709f84df.js.map": "/nyrellcl/coffee-roasters-react/static/js/main.709f84df.js.map"
+    "main.1f1fc220.js.map": "/nyrellcl/coffee-roasters-react/static/js/main.1f1fc220.js.map"
   },
   "entrypoints": [
     "static/css/main.7302d588.css",
-    "static/js/main.709f84df.js"
+    "static/js/main.1f1fc220.js"
   ]
 }
