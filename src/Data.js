@@ -114,7 +114,10 @@ export const coffeeDrink = {
     preferenceDescriptionTwo: "For pour over or drip methods like Aeropress, Chemex, V60",
     preferenceTypeThree: "Espresso",
     preferenceDescriptionThree: "Dense and finely ground beans for an intense, flavorful experience.",
-    coffeeId: "options"
+    coffeeId: "options",
+    optionIdOne: "capsule",
+    optionIdTwo: "filter",
+    optionIdThree: "espresso"
 
 }
 
@@ -126,7 +129,10 @@ export const coffeeType = {
     preferenceDescriptionTwo: "Just like regular coffee, except the caffeine has been removed",
     preferenceTypeThree: "Blended",
     preferenceDescriptionThree: "Combination of two or three dark roasted beans of organic coffees",
-    coffeeId: "bean"
+    coffeeId: "bean",
+    optionIdOne: "single",
+    optionIdTwo: "decaf",
+    optionIdThree: "blended"
 }
 
 export const coffeeAmount = {
@@ -137,7 +143,10 @@ export const coffeeAmount = {
     preferenceDescriptionTwo: "Perfect option for a couple. Yields about 40 delectable cups.",
     preferenceTypeThree: "1000g",
     preferenceDescriptionThree: "Perfect for offices and events. Yields about 90 delectable cups.",
-    coffeeId: "quantity"
+    coffeeId: "quantity",
+    optionIdOne: "solo",
+    optionIdTwo: "couple",
+    optionIdThree: "events"
 }
 
 export const coffeeGrind = {
@@ -148,7 +157,10 @@ export const coffeeGrind = {
     preferenceDescriptionTwo: "For drip or pour-over coffee methods such as V60 or Aeropress",
     preferenceTypeThree: "Cafetiere",
     preferenceDescriptionThree: "Course ground beans specifically stuffed for french press coffee",
-    coffeeId: "grind"
+    coffeeId: "grind",
+    optionIdOne: "wholebean",
+    optionIdTwo: "filter-two",
+    optionIdThree: "cafetiere"
     
 }
 
@@ -160,6 +172,9 @@ export const coffeeDeliver = {
     preferenceDescriptionTwo: "$9.50 per shipment. Includes free priority shipping.",
     preferenceTypeThree: "Every month",
     preferenceDescriptionThree: "$12.00 per shipment. Includes free priority shipping.",
-    coffeeId: "delivery"
+    coffeeId: "delivery",
+    optionIdOne: "week",
+    optionIdTwo: "two-weeks",
+    optionIdThree: "monthly"
     
 }
