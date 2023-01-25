@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCaretUp } from "react-icons/fa"
 
-function PreferenceTemplate({ preferenceHeading, preferenceTypeOne, preferenceTypeTwo, preferenceTypeThree, preferenceDescriptionOne, preferenceDescriptionTwo, preferenceDescriptionThree, preferenceCardOne, preferenceCardTwo ,preferenceCardThree, coffeeId }) {
+function PreferenceTemplate({ preferenceHeading, preferenceTypeOne, preferenceTypeTwo, preferenceTypeThree, preferenceDescriptionOne, preferenceDescriptionTwo, preferenceDescriptionThree, coffeeId }) {
     return (
         <article className='preference-section__content' id={coffeeId}>
             <div className='preference-section__content__heading'>
