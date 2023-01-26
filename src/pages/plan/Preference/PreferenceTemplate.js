@@ -3,12 +3,13 @@ import { useState } from 'react'
 import { FaChevronUp, FaChevronDown } from "react-icons/fa"
 
 function PreferenceTemplate({ optionIdOne, optionIdTwo, optionIdThree, preferenceHeading, preferenceTypeOne, preferenceTypeTwo, preferenceTypeThree, preferenceDescriptionOne, preferenceDescriptionTwo, preferenceDescriptionThree, coffeeId }) {
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(true);
 
     return (
         <article className='preference-section__content' id={coffeeId}>
             <div className='preference-section__content__heading'>
                 <h3>{preferenceHeading}</h3>
+                {/**user can toggle between show preferences or not*/ }
                 {show ? <FaChevronUp onClick={() => setShow(!show)}/>
                 : (<FaChevronDown onClick={()=> setShow(!show)}/>)}
             </div>
