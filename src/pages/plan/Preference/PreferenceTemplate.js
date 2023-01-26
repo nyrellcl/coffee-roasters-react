@@ -1,14 +1,18 @@
 import React from 'react'
-import { FaCaretUp } from "react-icons/fa"
+import { useState } from 'react'
+import { FaChevronUp, FaChevronDown } from "react-icons/fa"
 
 function PreferenceTemplate({ optionIdOne, optionIdTwo, optionIdThree, preferenceHeading, preferenceTypeOne, preferenceTypeTwo, preferenceTypeThree, preferenceDescriptionOne, preferenceDescriptionTwo, preferenceDescriptionThree, coffeeId }) {
+    const [show, setShow] = useState(true)
 
     return (
         <article className='preference-section__content' id={coffeeId}>
             <div className='preference-section__content__heading'>
                 <h3>{preferenceHeading}</h3>
-                <span><FaCaretUp/></span>
+                {show ? <FaChevronUp onClick={() => setShow(!show)}/>
+                : (<FaChevronDown onClick={()=> setShow(!show)}/>)}
             </div>
+            {show && (
             <div className='preference-section__content__container'>
                 <div className='preference-section__content__container__card' id={optionIdOne}>
                     <h4>{preferenceTypeOne}</h4>
@@ -23,6 +27,8 @@ function PreferenceTemplate({ optionIdOne, optionIdTwo, optionIdThree, preferenc
                     <p>{preferenceDescriptionThree}</p>
                 </div>
             </div>
+
+            )}
         </article>
     )
 }
