@@ -21,7 +21,7 @@ function ProcessHome(lineDecor) {
             <ProcessTemplate {...processThree}/>
          </div>
             <div className='btn-container'>
-                <Link>
+                <Link to="/plan">
                 <button type='button' className='plan-btn'>Create your plan</button>
                 </Link>
             </div>
